@@ -1,0 +1,91 @@
+*{
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --main-dark:#2e2e2e;
+    --main-color:#ff9244;
+    --main-color-hover:#e98952;
+}
+.btnSubmit{
+    background-color: var(--main-color);
+    font-weight: 600;
+}
+.textorng{
+    color: var(--main-color);
+}
+.footterbg{
+    background-color: var(--main-dark);
+}
+.btnSubmit:hover, .btnSubmit:focus {
+  color: #fff;
+  background-color: var(--main-color-hover);
+    
+}
+@media only screen and (max-width:400px) {
+    .mainLogo{
+        width: clamp(150px, 80%, 180px);
+    }
+}
+.carousl-h{
+    height: 400px !important;
+ }
+.carouselBg{
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+
+.tittle{
+    position:relative;
+    font-size:clamp(1rem ,3vw ,6rem );
+    letter-spacing:10px;
+    color:white;
+    text-transform:uppercase;
+    width:100%;
+    text-align:center;
+    -webkit-box-reflect: below .5px linear-gradient(transparent,rgb(86, 86, 86));
+      line-height:.5em;
+    outline:none;
+    animation : Glow 5s linear infinite alternate-reverse;
+  }
+  @keyframes Glow {
+    0%{
+      color:white;
+      text-shadow:none;
+    }
+    50%{
+      text-shadow: 0 0 5px white,
+        0 0 20px white,
+        0 0 40px white,
+        0 0 80px white,
+        0 0 160px white
+    }
+    100%{
+      text-shadow: 0 0 5px white,
+        0 0 20px #FFD16E,
+        0 0 40px #FFD16E,
+        0 0 80px #FFD16E,
+        0 0 160px #FFD16E
+    }
+  }
+
+  /* contact us form css start  */
+  .divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+  /* contact us form css end  */
